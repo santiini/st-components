@@ -7,6 +7,7 @@
     "start-kol": "lerna exec --scope @st/st-kol -- yarn start",
     "start_kol": "cd ./packages/st-kol && yarn start",
     "start": "lerna run start --parallel --ignore @st/st-kol --ignore @st/umi-app1",
+    "components": "lerna run start --parallel --scope @st/st-components",
     "kol": "cd ./packages/st-kol && yarn start",
     "umi-app1": "cd ./packages/umi-app1 && yarn start",
     "clean": "lerna clean && npm run rm-package-lock",
