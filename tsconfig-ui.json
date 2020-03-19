@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* target用于指定编译之后的版本目录 */
+    "target": "es5",
+    /* lib用于指定要包含在编译中的库文件 */
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    /* esModuleInterop通过导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性 */
+    "esModuleInterop": true,
+    /* allowSyntheticDefaultImports用来指定允许从没有默认导出的模块中默认导入 */
+    "allowSyntheticDefaultImports": true,
+    /* 文件名是否区分大小写 */
+    "forceConsistentCasingInFileNames": true,
+    /* module用来指定要使用的模板标准 */
+    "module": "esnext",
+    /* socuceMap用来指定编译时是否生成.map文件 */
+    "sourceMap": true,
+    /* moduleResolution用于选择模块解析策略，有"node"和"classic"两种类型 */
+    "moduleResolution": "node",
+    /* 是否允许把json文件当做模块进行解析 */
+    "resolveJsonModule": true,
+    /* isolatedModules指定是否将每个文件作为单独的模块，默认为true，他不可以和declaration同时设定 */
+    "isolatedModules": true,
+    /* 当target为"ES5"或"ES3"时，为"for-of" "spread"和"destructuring"中的迭代器提供完全支持 */
+    "downlevelIteration": true,
+    /* jsx 指定jsx代码用于的开发环境:'preserve','react-native',or 'react */
+    "jsx": "react",
+    /* strict用于指定是否启动所有类型检查，如果设为true这回同时开启下面这几个严格检查，默认为false */
+    "strict": true,
+    /* noImplicitAny如果我们没有一些值设置明确类型，编译器会默认认为这个值为any类型，
+      如果将noImplicitAny设为true,则如果没有设置明确的类型会报错，默认值为false */
+    "noImplicitAny": false,
+    /* strictNullChecks当设为true时，null和undefined值不能赋值给非这两种类型的值 */
+    "strictNullChecks": false
+  }
+}
