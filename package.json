@@ -3,10 +3,10 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "start:kol": "yarn workspace st-kol start",
-    "start-kol": "lerna exec --scope st-kol -- yarn start",
+    "start:kol": "yarn workspace @st/st-kol start",
+    "start-kol": "lerna exec --scope @st/st-kol -- yarn start",
     "start_kol": "cd ./packages/st-kol && yarn start",
-    "start": "lerna run start --parallel --ignore st-kol",
+    "start": "lerna run start --parallel --ignore @st/st-kol",
     "kol": "cd ./packages/st-kol && yarn start",
     "clean": "lerna clean && npm run rm-package-lock",
     "rm-package-lock": "rm -rf ./packages/*/package-lock.json",
