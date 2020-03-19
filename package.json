@@ -1,7 +1,18 @@
 {
   "name": "lerna-starter",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:kol": "yarn workspace st-kol start",
+    "start-kol": "lerna exec --scope st-kol -- yarn start",
+    "start_kol": "cd ./packages/st-kol && yarn start"
+  },
   "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "eslint": "^6.8.0",
@@ -13,5 +24,9 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "lerna": "^3.20.2",
     "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   }
 }
