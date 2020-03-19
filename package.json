@@ -1,13 +1,21 @@
 {
   "name": "lerna-starter",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "start:kol": "yarn workspace st-kol start",
     "start-kol": "lerna exec --scope st-kol -- yarn start",
-    "start_kol": "cd ./packages/st-kol && yarn start"
+    "start_kol": "cd ./packages/st-kol && yarn start",
+    "start": "lerna run start --parallel --ignore st-kol",
+    "kol": "cd ./packages/st-kol && yarn start",
+    "clean": "lerna clean && npm run rm-package-lock",
+    "rm-package-lock": "rm -rf ./packages/*/package-lock.json",
+    "link": "lerna link",
+    "prettier": "prettier --write './packages/*/src/**/*.??'",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx packages",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty packages",
+    "precommit": "lint-staged",
+    "test": "lerna run --stream test"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",

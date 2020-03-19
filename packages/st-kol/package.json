@@ -1,11 +1,13 @@
 {
-    "name": "st-kol",
+    "name": "@st/st-kol",
     "version": "1.0.0",
     "description": "try kol",
     "main": "dist/app.js",
     "scripts": {
-        "start": "webpack-dev-server",
-        "build": "webpack -c ./webpack.config.js"
+        "start": " node --max_old_space_size=8192 ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --env.NODE_ENV=development",
+        "build": "rimraf dist && node --max_old_space_size=8192 ./node_modules/webpack/bin/webpack.js  --env.NODE_ENV=production  -c ./webpack.config.js ",
+        "start1": "webpack-dev-server",
+        "build1": "webpack -c ./webpack.config.js"
     },
     "keywords": [],
     "author": "",
@@ -39,6 +41,7 @@
         "webpack-dev-server": "^3.10.3"
     },
     "dependencies": {
+        "@st/st-components": "^1.0.0",
         "antd": "^4.0.3",
         "classnames": "^2.2.6",
         "copy-to-clipboard": "^3.3.1",
