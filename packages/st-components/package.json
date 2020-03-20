@@ -1,6 +1,6 @@
 {
   "name": "@st/st-components",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "description": "components for effective development",
   "main": "./dist/index",
   "types": "./dist/index",
