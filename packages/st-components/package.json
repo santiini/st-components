@@ -1,5 +1,5 @@
 {
-  "name": "@st/st-components",
+  "name": "@santiini/st-components",
   "version": "0.0.5-alpha.0",
   "description": "components for effective development",
   "main": "./dist/index",
@@ -47,5 +47,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "1ddb86648500b837e2194c87370c5699c50eaae7"
+  "gitHead": "d3ab85fda49958b56c0e6d5825670e50fa854d95"
 }
