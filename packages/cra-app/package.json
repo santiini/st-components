@@ -1,6 +1,5 @@
 {
   "name": "@st/cra-app",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@st/st-components": "^1.0.0",

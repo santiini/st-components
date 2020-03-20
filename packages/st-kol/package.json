@@ -1,7 +1,6 @@
 {
   "name": "@st/st-kol",
   "private": true,
-  "version": "1.0.0",
   "description": "try kol",
   "main": "dist/app.js",
   "scripts": {
