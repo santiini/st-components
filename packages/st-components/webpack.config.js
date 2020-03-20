@@ -77,11 +77,11 @@ module.exports = env => {
     },
     devtool: 'cheap-module-eval-source-map',
     output: {
-      library: 'GraphinComponents',
+      library: 'StComponents',
       libraryTarget: 'umd',
       path: path.resolve(__dirname, 'dist/'),
       publicPath: './',
-      filename: 'graphin-components.min.js',
+      filename: 'st-components.min.js',
     },
     plugins: [
       new MiniCssExtractPlugin(),

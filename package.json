@@ -1,6 +1,5 @@
 {
   "name": "lerna-starter",
-  "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start:kol": "yarn workspace @st/st-kol start",
@@ -10,6 +9,7 @@
     "components": "lerna run start --parallel --scope @st/st-components",
     "kol": "cd ./packages/st-kol && yarn start",
     "umi-app1": "cd ./packages/umi-app1 && yarn start",
+    "umi-demos": "cd ./packages/umi-demos && yarn start",
     "clean": "lerna clean && npm run rm-package-lock",
     "rm-package-lock": "rm -rf ./packages/*/package-lock.json",
     "link": "lerna link",
@@ -52,5 +52,9 @@
       "eslint --ext .js,.jsx,.ts,.tsx",
       "prettier --write"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   }
 }

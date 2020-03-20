@@ -1,18 +1,15 @@
 {
   "name": "@st/st-components",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "components for effective development",
   "main": "./dist/index",
+  "types": "./dist/index",
   "scripts": {
     "start": "father build --watch",
     "build": "father build",
     "build:umd": "node --max_old_space_size=8192 ./node_modules/webpack/bin/webpack.js  --env.NODE_ENV=production  -c ./webpack.config.js ",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "sideEffects": false,
   "peerDependencies": {
     "antd": "^4.0.3",
     "react": "^16.13.0",
@@ -42,5 +39,12 @@
     "webpack": "^4.42.0",
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.11"
+  },
+  "keywords": [],
+  "author": "Santiiny",
+  "license": "MIT",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
   }
 }
