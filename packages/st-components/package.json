@@ -1,5 +1,5 @@
 {
-  "name": "@st/st-react-components",
+  "name": "@st/st-components",
   "version": "0.0.4-alpha.0",
   "description": "components for effective development",
   "main": "./dist/index",
@@ -47,5 +47,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "a9be71b5614887baedc541d38268c41a1ddd37cc"
+  "gitHead": "1ddb86648500b837e2194c87370c5699c50eaae7"
 }
