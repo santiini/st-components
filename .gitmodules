@@ -1,0 +1,3 @@
+[submodule "packages/umi-demos"]
+	path = packages/umi-demos
+	url = https://gitee.com/suntiiny/umi-demos.git
