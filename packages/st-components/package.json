@@ -1,6 +1,6 @@
 {
   "name": "@santiini/st-components",
-  "version": "0.0.5-alpha.0",
+  "version": "0.0.6-alpha.0",
   "description": "components for effective development",
   "main": "./dist/index",
   "types": "./dist/index",
